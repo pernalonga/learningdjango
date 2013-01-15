@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>White Statement - Geraldo Atilio Bertoli</title>
+    <style type="text/css">
+      body { background: black; color: white }
+      a:link { color: red }
+      a:visited { color: blue }
+      a:active { color: yellow }
+    </style>
+  </head>
+  <body>
+
+    <h1>White Statement</h1>
+
+    {% for artigo in latest %}
+    <h2>{{ artigo.titulo }}</h2>
+
+    {{ artigo.conteudo }}
+    {% endfor %}
+
+  </body>
+</html>
+
